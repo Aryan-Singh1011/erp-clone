@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erp clone</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+        }
+        .left{
+            width: 70%;
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .right{
+            width: 30%;
+            background-color: #ddd;
+            padding: 20px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .bottom{
+            background-color: #3d454d;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .bottom h5{
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .top{
+            height: 30rem;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo{
+            height: 10rem;
+            margin-bottom: 20px;
+            }
+        .place{
+            height: 25rem;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .btnc{
+            text-align: center;
+            margin-top: 80px;
+        }
+        button{
+            padding: 14px 29px;
+            font-size: 17px;
+            cursor: pointer;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 9px;
+            border: none;
+            border-radius: 3%;
+            color: white;
+            display: inline-block;
+            width: 100%;
+            transition: background-color 0.2s ease;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        #sign{
+             background-color: #2386f1;
+        }
+        #forgot{
+            background-color: #ee4654;
+        }
+        #new{
+            background-color: #189d82;
+        }
+        #parent{
+            background-color: #41a8ed;
+        }
+        h6{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        input{
+            width: 80%;
+            padding: 15px;
+            margin: 1px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: box-shadow 0.3s ease;
+        }
+        input:focus{
+           border-color: #f12323;
+           outline: none;
+           box-shadow: 0 0 10px #f12323;
+        }
+    </style>
+            <div class="left">
+                <div class="top">
+                    <img src="images\placement.png" class="place">
+                </div>
+                <footer class="bottom">
+                    <p>Welcome to PSIT Kanpur</p>
+                    <h5>The access to this website is limited to the institute Management, Faculty and Students only (Login to your accounts to navigate the website).   Visitors may kindly visit www.psit.ac.in for information about the institutes.</h5>
+                </footer>
+            </div>
+            <div class="right">
+                <img src="images\logo.png" class="logo"><br>
+                <input type="text" id="userid" placeholder="User Id/ Roll Number"><br>
+                <input type="password" id="pass" placeholder="Password">
+                <div class="btnc">
+                    <button id="sign">Sign me in</button><br>
+                <button id="forgot">Forgot Password</button>
+                <button id="new">Create New User(New Admission)</button>
+                <button id="parent">Create Parent Login</button>
+                </div>
+                <h6>All Right Reserved &copy PSIT & Developed By Network Cell</h6>
+            </div>
+</body>
+</html>
